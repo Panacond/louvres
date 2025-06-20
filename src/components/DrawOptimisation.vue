@@ -1,5 +1,5 @@
 <script setup>
-const material = defineModel()
+const material = defineModel('material')
 </script>
 <template>
     <h1>Оптимизация</h1>

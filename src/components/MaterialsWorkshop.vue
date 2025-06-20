@@ -1,5 +1,5 @@
 <script setup>
-const department = defineModel()
+const department = defineModel('department')
 import {saveToCSVworkshop } from '../utils/saveToCSV.js';
 
 </script>

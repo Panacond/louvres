@@ -1,5 +1,5 @@
 <script setup>
-const details = defineModel()
+const details = defineModel('details')
 import { saveToCSVdetails } from '../utils/saveToCSV.js';
 
 </script>

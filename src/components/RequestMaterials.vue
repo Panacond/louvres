@@ -1,5 +1,5 @@
 <script setup>
-const material = defineModel()
+const material = defineModel('material')
 import { saveToCSV_mat } from '../utils/saveToCSV.js';
 
 </script>

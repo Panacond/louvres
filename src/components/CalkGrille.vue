@@ -1,10 +1,10 @@
 <script setup>
 import { defineModel } from 'vue';
-const grille = defineModel('grilleTable')
-const details = defineModel('detailsTable')
-const material = defineModel('materialTable')
-const products = defineModel('productsTable')
-const department = defineModel('departmentTable')
+const grille = defineModel('grille')
+const details = defineModel('details')
+const material = defineModel('material')
+const products = defineModel('products')
+const department = defineModel('department')
 
 /**
  * Округляет число вверх до ближайшего кратного значения.

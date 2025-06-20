@@ -18,7 +18,7 @@ const products = ref(startData.products)
 const department = ref(startData.department)
 function add_property() {
   department.value = material.value.map((profileItem) => {
-    const foundOriginalMaterial = this.material.find(
+    const foundOriginalMaterial = material.value.find(
       (mat) => mat.articul === profileItem.articul
     );
     return {
@@ -35,17 +35,16 @@ function add_property() {
 
   <main>
     {{ add_property() }}
-    <!-- <StartData v-model:grille="grille" v-model:details="details" v-model:material="material" v-model:products="products" v-model:department="department"/> -->
     <InputGridle v-model:grille="grille" />
-    <CalkGrille v-model:grille-table="grille" v-model:details-table="details" v-model:material-table="material"
-      v-model:products-table="products" v-model:department-table="department" />
-    <DetailsGrille v-model="details" />
-    <RequestMaterials v-model="material" />
-    <EquipmentSheet v-model="products" />
-    <MaterialsWorkshop v-model="department" />
+    <CalkGrille v-model:grille="grille" v-model:details="details" v-model:material="material"
+      v-model:products="products" v-model:department="department" /> 
+    <DetailsGrille v-model:details="details" />
+    <RequestMaterials v-model:material="material" />
+    <EquipmentSheet v-model:products="products" />
+    <MaterialsWorkshop v-model:department="department" />
     <SaveTables v-model:grille="grille" v-model:details="details" v-model:material="material"
       v-model:products="products" v-model:department="department" />
-    <DrawOptimisation v-model="material" />
+    <DrawOptimisation v-model:material="material" />
     <WerticalAuto/>
 
   </main>
