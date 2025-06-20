@@ -1,7 +1,8 @@
 {
   "name": "louvres",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://panacond.github.io/louvres/",
   "type": "module",
   "scripts": {
     "dev": "vite",
